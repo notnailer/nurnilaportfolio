@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nurnila Sabini | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--SCROLL PROGRESS BAR -->
+    <div id="scrollProgress" class="scroll-progress"></div>
+
+    <!-- Digital Starfield Background Canvas -->
+    <canvas id="starfieldCanvas"></canvas>
+
+    <!-- HEADER AND NAVIGATION BAR -->
+    <header>
+        <nav class="navbar" aria-label="Main Navigation">
+            <a href="#home" class="logo">NURNILA SABINI | PORTFOLIO<span class="dot">.</span></a>
+            
+            <button id="hamburger" class="hamburger" aria-label="Toggle Navigation Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul id="navLinks" class="nav-links">
+                <li><button id="themeToggleBtn" class="theme-btn">☀️ Day Mode</button></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#competitions">Activities & Competitions</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <!-- 1. HOME SECTION -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <p class="greeting" id="dynamicGreeting">WELCOME TO MY PORTFOLIO SPACE</p>
+            <h1>Hello, I'm <span class="highlight">Nurnila Sabini!</span></h1>
+            <p>I am <span id="typingEffect"></span></p>
+            <a href="#about" class="btn pulse-btn">About Me</a>
+        </div>
+    </section>
+    
+    <!-- 2. ABOUT ME SECTION -->
+    <section id="about" class="section reveal">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-img-box">
+                    <img src="nila convo.jpeg" alt="Gambar profil Nurnila Sabini" class="profile-img float-anim">
+                </div>
+                <div class="about-text-box">
+                    <p class="about-text">
+                        Welcome to my digital portfolio! I am a Computer Science student specializing in Multimedia Computing at Universiti Malaysia Sarawak (UNIMAS). During Diploma, I studied Computer Science at Universiti Teknologi Mara. I love to explore about Cybersecurity.
+                        Since I am specializing in Multimedia Computing, I love to design UI/UX prototype apps, develop games in my Computer Graphics course, and develop websites in my Web Application Development.
+                    </p>
+                    
+                    <div class="social-links" style="margin-bottom: 25px;">
+                        <a href="https://www.linkedin.com/in/nurnila-sabini-74947b338/" target="_blank" class="linkedin-btn glow-anim">
+                            🔗 Connect on LinkedIn
+                        </a>
+                    </div>
+
+                    <div class="skills">
+                        <h3>Technical Skills</h3>
+                        <ul class="skills-list">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>UI/UX</li>
+                            <li>JAVA Programming</li>
+                            <li>C++ Programming</li>
+                            <li>Python Programming</li>
+                            <li>Computer Graphics</li>
+                            <li>Database Design</li>
+                            <li>Game Development</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. WORKING EXPERIENCE SECTION -->
+    <section id="experience" class="section alt-bg reveal">
+        <div class="container">
+            <h2>Working Experience</h2>
+            
+            <div class="split-item" style="max-width: 900px; margin: 0 auto;">
+                <div class="split-media">
+                    <img src="intern.jpeg" alt="Industrial Training Preparation" class="internship-img">
+                </div>
+                <div class="split-content">
+                    <span class="badge" style="margin-bottom: 15px;">Trainee</span>
+                    <h3 style="margin-bottom: 10px;">IT Trainee</h3>
+                    <p style="font-size: 0.95rem; line-height: 1.7;">
+                       IT Trainee under Pejabat Pendidikan Daerah (PPD) Saratok. I was attached at ICT Unit under Management Sector.
+                       This unit is responsible to make sure all the business that related to ICT is running smoothly. Other than that,
+                       this unit often has task where they need to be ready to go to any school that facing some difficulties with ICT business.
+                       Last but not least, this unit also has a schedule where they have to make a visit to the school that is under PPD Saratok to check 
+                       their ICT equipment or any kind of business that related to ICT.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. PROJECTS SECTION -->
+    <section id="projects" class="section reveal">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-grid">
+
+                <!-- PROJECT 1 -->
+                <article class="project-card">
+                    <div class="project-img-box">
+                        <img src="UN Logo.jpg" alt="UN Logo image" class="project-img">
+                    </div>
+                    <div class="project-info">
+                        <span class="badge">Java / GUI</span>
+                        <h3>Sustainable Sea Life App</h3>
+                        <p>An interactive mobile app using JAVA Programming language that focused on UN Sustainable Development Goal 14: Life Below Water.</p>
+                    </div>
+                </article>
+
+                <!-- PROJECT 2 -->
+                <article class="project-card">
+                    <div class="project-img-box">
+                        <img src="KUTS.png" alt="UI/UX prototype" class="project-img">
+                    </div>
+                    <div class="project-info">
+                        <span class="badge">Mobile / UI</span>
+                        <h3>KUTS Mobile Application</h3>
+                        <p>A UI/UX design prototype for KUTS mobile application and gathered user feedback by interviewing respondents.</p>
+                    </div>
+                </article>
+
+                <!-- PROJECT 3 -->
+                <article class="project-card">
+                    <div class="project-img-box">
+                        <img src="kinkou.jpg" alt="Screenshot of Kinkou Prototype project" class="project-img">
+                    </div>
+                    <div class="project-info">
+                        <span class="badge">Mobile / UI</span>
+                        <h3>Hackathon Project: KINKOU Mobile App</h3>
+                        <p>A stress and workload management mobile application prototype developed for student well-being during hackathons.</p>
+                    </div>
+                </article>
+
+                <!-- PROJECT 4 -->
+                <article class="project-card">
+                    <div class="project-img-box">
+                        <img src="gamedev.jpeg" alt="gamedev" class="project-img">
+                    </div>
+                    <div class="project-info">
+                        <span class="badge">Graphics / C++</span>
+                        <h3>90s Game Era</h3>
+                        <p>The bear and queen game where the bear must return the honey jar to the queen. Contains 5 levels of challenges.</p>
+                    </div>
+                </article>
+
+                <!-- PROJECT 5 -->
+                <article class="project-card">
+                    <div class="project-img-box">
+                        <img src="STC.png" alt="Screenshot of 3D Video Game Project" class="project-img">
+                    </div>
+                    <div class="project-info">
+                        <span class="badge">Python</span>
+                        <h3>Student Team Collaboration System</h3>
+                        <p>Collaboration system where students can manage, view, and upload assignment status, while lecturers can monitor them.</p>
+                    </div>
+                </article>
+
+                <!-- PROJECT 6 -->
+                <article class="project-card">
+                    <div class="project-img-box">
+                        <img src="seino.png" alt="Screenshot of SeiNo project" class="project-img">
+                    </div>
+                    <div class="project-info">
+                        <span class="badge">UI/UX</span>
+                        <h3>Hackathon Project: SeiNo: Say No to Scam!</h3>
+                        <p>A multimedia UI/UX prototype application designed to help users identify and prevent online scams.</p>
+                    </div>
+                </article>
+
+                <!-- PROJECT 7 -->
+                <article class="project-card">
+                    <div class="project-img-box">
+                        <img src="shaa.png" alt="SHAA database" class="project-img">
+                    </div>
+                    <div class="project-info">
+                        <span class="badge">Database</span>
+                        <h3>Sarawak Heritage Online Auction (SHAA) Database System</h3>
+                        <p>A system where sellers and buyers can bid on and sell items.</p>
+                    </div>
+                </article>
+
+                <!-- PROJECT 8 -->
+                <article class="project-card">
+                    <div class="project-img-box">
+                        <img src="ppdwebsite.png" alt="PPD Saratok Website" class="project-img">
+                    </div>
+                    <div class="project-info">
+                        <span class="badge">Google Sites</span>
+                        <h3>PPD Saratok ICT Unit Website</h3>
+                        <p>A website that promotes ICT Unit under PPD Saratok.</p>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. ACTIVITIES AND COMPETITIONS SECTION -->
+    <section id="competitions" class="section reveal">
+        <div class="container">
+            <h2>Activities & Competitions Participation</h2>
+            <h3 style="text-align: center;">Click image to see the full picture of the certificates!</h3>
+            
+            <div class="split-container">
+                
+                <!-- CERTIFICATE 1 -->
+                <div class="split-item">
+                    <div class="split-media">
+                        <img src="neocanvasposter.jpeg" alt="Sijil NEO CANVAS Merch Design" class="cert-img-full">
+                        <img src="lanyard.jpeg" alt="Lanyard Design" class="cert-img-full" style="margin-top: 15px;">
+                    </div>
+                    <div class="split-content">
+                        <span class="comp-badge winner">Winner</span>
+                        <h3>NEO CANVAS Merch Design Competition</h3>
+                        <div class="comp-meta">
+                            <span><strong>Level:</strong> University</span>
+                            <span><strong>Role:</strong> Designer & Editor</span>
+                        </div>
+                        <p>Winner for Lanyard category design during NEO CANVAS Merch Design competition.</p>
+                    </div>
+                </div>
+
+                <!-- CERTIFICATE 2 -->
+                <div class="split-item reverse">
+                    <div class="split-media">
+                        <img src="ctf.jpeg" alt="Sijil CTF NADI X Top 50" class="cert-img-full">
+                    </div>
+                    <div class="split-content">
+                        <span class="comp-badge participant">Top 50 Participant</span>
+                        <h3>Capture The Flag (CTF) NADI X Cybersecurity</h3>
+                        <div class="comp-meta">
+                            <span><strong>Level:</strong> International/Open</span>
+                            <span><strong>Role:</strong> NADI Fort Renee Participant</span>
+                        </div>
+                        <p>Ranked in the top 50 out of 127 teams in the NADI X Cybersecurity CTF by solving challenges in Cryptography, Steganography, Wildcard, and Digital Forensics.</p>
+                    </div>
+                </div>
+
+                <!-- CERTIFICATE 3 -->
+                <div class="split-item">
+                    <div class="split-media">
+                        <img src="sijilsakura.jpeg" alt="Sijil SAKURA College Merchandise" class="cert-img-full">
+                    </div>
+                    <div class="split-content">
+                        <span class="comp-badge participant">Participant</span>
+                        <h3>SAKURA College Merchandise Competition</h3>
+                        <div class="comp-meta">
+                            <span><strong>Level:</strong> College</span>
+                            <span><strong>Role:</strong> Designer & Editor</span>
+                        </div>
+                        <p>Designed merchandise for SAKURA college.</p>
+                    </div>
+                </div>
+
+                <!-- CERTIFICATE 4 -->
+                <div class="split-item reverse">
+                    <div class="split-media">
+                        <img src="OSH.jpeg" alt="Sijil OSH E-Poster Challenge" class="cert-img-full">
+                    </div>
+                    <div class="split-content">
+                        <span class="comp-badge participant">Participant</span>
+                        <h3>OSH E-Poster Creative Challenge</h3>
+                        <div class="comp-meta">
+                            <span><strong>Level:</strong> University</span>
+                            <span><strong>Role:</strong> Designer & Editor</span>
+                        </div>
+                        <p>Designed poster for OSH Week with my teammates.</p>
+                    </div>
+                </div>
+
+                <!-- CERTIFICATE 5 -->
+                <div class="split-item">
+                    <div class="split-media">
+                        <img src="kolaxus.jpeg" alt="Sijil KOLAXUS AI" class="cert-img-full">
+                    </div>
+                    <div class="split-content">
+                        <span class="comp-badge participant">Participant</span>
+                        <h3>KOLAXUS AI Anti Scam Challenge (HACKATHON) 2026</h3>
+                        <div class="comp-meta">
+                            <span><strong>Level:</strong> University/Open</span>
+                            <span><strong>Role:</strong> TechEX member</span>
+                        </div>
+                        <p>Design a mobile application prototype and pitch idea about how to against scam by using the mobile application that we created.</p>
+                    </div>
+                </div>
+
+                <!-- CERTIFICATE 6 -->
+                <div class="split-item reverse">
+                    <div class="split-media">
+                        <img src="UTHM.jpeg" alt="Sijil UTHM Webinar" class="cert-img-full">
+                    </div>
+                    <div class="split-content">
+                        <span class="comp-badge participant">Participant</span>
+                        <h3>AI-Powered Python: Build Smarter Applications with AI & APIs</h3>
+                        <div class="comp-meta">
+                            <span><strong>Level:</strong> University/Open</span>
+                            <span><strong>Role:</strong> Participant</span>
+                        </div>
+                        <p>Webinar about how to build smarter application by using AI and APIs organised by FCSIT UTHM.</p>
+                    </div>
+                </div>
+
+                <!-- CERTIFICATE 7 -->
+                <div class="split-item">
+                    <div class="split-media">
+                        <img src="UTHM2.jpeg" alt="Sijil UTHM Webinar Laravel" class="cert-img-full">
+                    </div>
+                    <div class="split-content">
+                        <span class="comp-badge participant">Participant</span>
+                        <h3>CODEVERSE 4 Weeks 4 Technologies: Getting Started with Laravel</h3>
+                        <div class="comp-meta">
+                            <span><strong>Level:</strong> University/Open</span>
+                            <span><strong>Role:</strong> Participant</span>
+                        </div>
+                        <p>Webinar about how to use Laravel organised by FCSIT UTHM.</p>
+                    </div>
+                </div>
+
+                <!-- CERTIFICATE 8 -->
+                <div class="split-item reverse">
+                    <div class="split-media">
+                        <img src="video.jpeg" alt="Sijil Short Video Competition" class="cert-img-full">
+                    </div>
+                    <div class="split-content">
+                        <span class="comp-badge participant">Participant</span>
+                        <h3>Short Video Competition</h3>
+                        <div class="comp-meta">
+                            <span><strong>Level:</strong> University/Open</span>
+                            <span><strong>Role:</strong> Participant</span>
+                        </div>
+                        <p>A short video competition organised by FSKTM UiTM Campus Samarahan 2.</p>
+                    </div>
+                </div>
+
+                <!-- CERTIFICATE9 -->
+                <div class="split-item">
+                    <div class="split-media">
+                        <img src="codewar.jpeg" alt="Sijil Codewar" class="cert-img-full">
+                    </div>
+                    <div class="split-content">
+                        <span class="comp-badge participant">Participant</span>
+                        <h3>Pertandingan Codewar COMPASS 2021</h3>
+                        <div class="comp-meta">
+                            <span><strong>Level:</strong> University/Open</span>
+                            <span><strong>Role:</strong> Participant</span>
+                        </div>
+                        <p>A coding competition organised by COMPASS UiTM Campus Samarahan 2.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. CONTACT SECTION -->
+    <section id="contact" class="section alt-bg reveal">
+        <div class="container text-center">
+            <h2>Contact Me</h2>
+            <p class="section-hint">Have a question or want to work together? Get in touch!</p>
+            
+            <div class="contact-action-card">
+                <div class="contact-details-row">
+                    <div class="contact-detail-item">
+                        <span class="icon">📧 Email:</span>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=nurnilasabini@gmail.com" target="_blank" class="contact-link">nurnilasabini@gmail.com</a>
+                    </div>
+                    <div class="contact-detail-item">
+                        <span class="icon">💼 LinkedIn:</span>
+                        <a href="https://www.linkedin.com/in/nurnila-sabini-74947b338/" target="_blank" class="contact-link">Nurnila Sabini</a>
+                    </div>
+                </div>
+
+                <div class="modal-trigger-box">
+                    <p>Or send me a quick message directly from here:</p>
+                    <button id="openContactModal" class="btn pulse-btn">💬 Send Me A Message</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- POP UP BOX AT CONTACT SECTION -->
+    <div id="contactModal" class="modal-overlay" aria-hidden="true">
+        <div class="modal-content glass-box">
+            <button id="closeContactModal" class="modal-close" aria-label="Close Modal">&times;</button>
+            <h3>Send Me a Message</h3>
+            <p class="modal-sub">I'll get back to you as soon as possible!</p>
+
+            <form id="contactForm" class="contact-form-modal" novalidate>
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" rows="4" placeholder="Type your message here..." required></textarea>
+                </div>
+                <button type="submit" class="btn pulse-btn full-width-btn">Send Message</button>
+            </form>
+            <div id="formStatus" class="form-status"></div>
+        </div>
+    </div>
+
+    <!-- CERTIFICATE VIEWER FULL SIZE IMAGE LIGHTBOX -->
+    <div id="imageLightbox" class="lightbox-modal" aria-hidden="true">
+        <span class="lightbox-close" id="closeLightbox">&times;</span>
+        <img class="lightbox-img" id="lightboxImg" alt="Enlarged certificate view">
+    </div>
+
+    <!-- SCROLL TO TOP BUTTON -->
+    <button id="scrollTopBtn" class="scroll-btn" aria-label="Scroll to top">↑</button>
+
+    <footer>
+        <p>&copy; 2026 Nurnila Sabini | Computer Science | Multimedia Computing</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
